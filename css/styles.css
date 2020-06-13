@@ -102,12 +102,18 @@ a.logo {
 
 /*Герой/Jumbotron*/
 .jumbotron {
+    height: 600px;
+    padding: 200px 0;
+
     color: var(--white-textcolor);
     /*задаю background чтобы проверить применение цвета к h1 и а*/
     background-color: rgba(47, 48, 58, 0.8);
     letter-spacing: 0.06em;
 }
 .jumbotron-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -115,6 +121,13 @@ a.logo {
     text-transform: uppercase;
 }
 .jumbotron-button { 
+    display: block;
+    width: 200px;
+    height: 50px;
+    padding: 10px 32px;
+    border-radius: 4px;
+    margin: 0 auto;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
