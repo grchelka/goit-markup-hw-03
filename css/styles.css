@@ -1,0 +1,220 @@
+:root {
+    --main-textcolor: #212121;
+    --accent-color: #2196F3;
+    --grey-textcolor: #757575;
+    --white-textcolor: #FFFFFF;
+    --main-backgroundcolor: #FFFFFF;
+    --secondary-backgroundcolor: #F5F4FA;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--main-textcolor);
+    background-color: var(--main-backgroundcolor);
+}
+a:hover,
+a:focus {
+    color: var(--accent-color);
+}
+
+/* Шапка сайта */
+a.logo {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+}
+
+.logo-header {
+    color: var(--main-textcolor);
+}
+
+.nav-links, 
+.nav-contacts {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.nav-links a {
+    color: inherit;
+}
+.nav-contacts a {
+    color: var(--grey-textcolor);
+}
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-contacts a:hover,
+.nav-contacts a:focus {
+    color: var(--accent-color);
+}
+/*Герой/Jumbotron*/
+.jumbotron {
+    color: var(--white-textcolor);
+    /*задаю background чтобы проверить применение цвета к h1 и а*/
+    background-color: rgba(47, 48, 58, 0.8);
+    letter-spacing: 0.06em;
+}
+.jumbotron-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+}
+.jumbotron-button { 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    background-color: var(--accent-color);
+}
+/*имитация кнопки, т.к. кнопки сказали не использовать; изменения при hover и focus видно в дубликате макета*/
+.jumbotron-button:hover,
+.jumbotron-button:focus {
+background-color: #188ce8;
+}
+.jumbotron-button:visited {
+    color: var(--white-textcolor);
+}
+
+/* Преимущества */
+.advantages-list h3 {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.advantages-list p {
+    line-height: 1.7;
+    color: var(--grey-textcolor);
+}
+
+.service-title,
+.team-title,
+.clients-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/* Набор услуг */
+.service-list h3 {
+    font-weight: bold;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-textcolor);
+    /* задаю background чтобы проверить применение цвета к h3 */
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+/* Команда */
+.team {
+    background-color: var(--secondary-backgroundcolor);
+}
+.team-list h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team-list p {
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--grey-textcolor);
+}
+/* позже используем встроенные svg файлы со стилями */
+.social-link {
+    color:#AFB1B8;
+}
+
+/* Клиенты */
+/* позже используем встроенные svg файлы со стилями */
+
+.clients-list a:visited {
+    color:#AFB1B8;
+}
+
+.clients-list a:hover,
+.clients-list a:focus {
+    color: var(--accent-color);
+}
+
+/* Footer */
+.footer {
+    background-color: #2F303A;
+}
+.logo-footer {
+    color: var(--white-textcolor);
+}
+.footer-contacts {
+    line-height: 1.7;
+}
+
+.footer-contacts address {
+    color: var(--white-textcolor);
+}
+
+.footer-contacts a {
+    color:rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    color: var( --accent-color);
+}
+/* позже вставим email-input; button */
+.footer p {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase; 
+    color: var(--white-textcolor);
+}
+
+.page-authors {
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* дополнительные стили для Портфолио*/
+.radio-button a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    color: var(--main-textcolor);
+    background-color: var(--secondary-backgroundcolor);
+}
+
+.radio-button a:hover,
+.radio-button a:focus {
+    color: var(--white-textcolor);
+    background-color: var(--accent-color);
+}
+.examples-list h2 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.examples-list p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--grey-textcolor);
+}
+
+.examples-list .popup-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--white-textcolor);
+    /* background будет работать иначе при поключении интерактивности, ставлю, чтобы видно было p */
+    background-color: var(--accent-color);
+}
