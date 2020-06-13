@@ -7,7 +7,20 @@
     --secondary-backgroundcolor: #F5F4FA;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+    width: 1600px;
+    margin: 0 auto 0 auto;
+
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -22,7 +35,17 @@ a:focus {
 }
 
 /* Шапка сайта */
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-left: 215px;
+    margin-right: 215px;
+    
+    height: 80px;   
+}
 a.logo {
+    margin-right: 85px;
+
     font-family: Raleway, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -37,13 +60,21 @@ a.logo {
 
 .nav-links, 
 .nav-contacts {
+    display: flex;
+
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
 .nav-links a {
-    color: inherit;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    color: inherit;   
 }
+
 .nav-contacts a {
     color: var(--grey-textcolor);
 }
@@ -53,6 +84,22 @@ a.logo {
 .nav-contacts a:focus {
     color: var(--accent-color);
 }
+
+.nav-contacts {
+    margin-left: auto;
+}
+
+.nav-links .item:not(:last-child) {
+    margin-right: 50px;
+}
+/* .nav-links .item + .item {
+    margin-left: 50px;
+}*/
+
+.nav-contacts .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 /*Герой/Jumbotron*/
 .jumbotron {
     color: var(--white-textcolor);
