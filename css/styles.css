@@ -176,13 +176,38 @@ background-color: #188ce8;
 }
 
 /* Набор услуг */
+.service-items {
+    display: flex;
+    margin-left: 215px;
+    margin-right: 215px;
+}
+
+.service-items .item.item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.service-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.item-title {
+    /* использовала div, т.к. думаю пригодится в дз4 */
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    /* задаю background чтобы проверить применение цвета к h3 */
+
+}
 .service-list h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 27px;
+
+    text-align: center;
     font-weight: bold;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--white-textcolor);
-    /* задаю background чтобы проверить применение цвета к h3 */
-    background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* Команда */
