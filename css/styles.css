@@ -299,11 +299,43 @@ background-color: #188ce8;
 
 /* Footer */
 .footer {
+    padding-top: 45px;
+    padding-bottom: 21px;
     background-color: #2F303A;
 }
+
+.footer-container {
+    display: flex;
+    margin-left: 214px;
+    margin-right: 216px;
+    margin-bottom: 46px;
+}
+
+.address {
+    margin-right: 69px;
+}
+
+.logo {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.adress-block {
+    margin-bottom: 9px;
+}
+
+.mail-block {
+    display: block;
+    margin-bottom: 9px;
+}
+.join-list {
+    margin-right: 94px;
+}
+
 .logo-footer {
     color: var(--white-textcolor);
 }
+
 .footer-contacts {
     line-height: 1.7;
 }
@@ -329,6 +361,11 @@ background-color: #188ce8;
 }
 
 .page-authors {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 645px;
+    margin-right: 645px;
+
     font-size: 12px;
     line-height: 2;
     text-align: center;
