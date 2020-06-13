@@ -176,6 +176,9 @@ background-color: #188ce8;
 }
 
 /* Набор услуг */
+.service {
+    margin-bottom: 94px;
+}
 .service-items {
     display: flex;
     margin-left: 215px;
@@ -212,18 +215,50 @@ background-color: #188ce8;
 
 /* Команда */
 .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    height: 702px;
+}
+
+.team-title {
+    margin-top: 0;
+    margin-bottom: 50px;  
+}
+
+.team-list {
+    display: flex;
+    margin-left: 215px;
+    margin-right: 215px;
+    text-align: center;
+}
+
+.team-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team {
     background-color: var(--secondary-backgroundcolor);
 }
 .team-list h3 {
+    margin-top: 30px;
+    margin-bottom: 0;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 }
 
 .team-list p {
+    margin-top: 10px;
+    margin-bottom: 0;
+
     font-size: 16px;
     line-height: 1.19;
     color: var(--grey-textcolor);
+}
+
+.social-items {
+    margin-top: 16px;
 }
 /* позже используем встроенные svg файлы со стилями */
 .social-link {
@@ -232,6 +267,26 @@ background-color: #188ce8;
 
 /* Клиенты */
 /* позже используем встроенные svg файлы со стилями */
+.clients {
+    margin-bottom: 94px;
+}
+.clients-title {
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+
+.clients-list a {
+    display: block;
+}
+
+.clients-list .item:not(:last-child) {
+    margin-right: 30px;
+}
 
 .clients-list a:visited {
     color:#AFB1B8;
