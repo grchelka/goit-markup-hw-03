@@ -143,6 +143,18 @@ background-color: #188ce8;
 }
 
 /* Преимущества */
+.advantages-list {
+    display: flex;
+    margin-top: 244px;
+    margin-bottom: 94px;
+    margin-left: 215px;
+    margin-right: 215px;
+}
+
+.advantages-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .advantages-list h3 {
     font-weight: 700;
     line-height: 1.14;
