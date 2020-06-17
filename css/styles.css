@@ -18,8 +18,7 @@ html {
 }
 
 body {
-    width: 1600px;
-    margin: 0 auto 0 auto;
+    margin: 0;
 
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -28,6 +27,13 @@ body {
     letter-spacing: 0.03em;
     color: var(--main-textcolor);
     background-color: var(--main-backgroundcolor);
+}
+
+.wrapper {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 a:hover,
@@ -39,15 +45,17 @@ a:focus {
 .header-container {
     display: flex;
     align-items: center;
-    margin-left: 215px;
-    margin-right: 215px;
-    
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
     height: 80px;   
 }
 
 a.logo {
     margin-right: 85px;
-
+    
     font-family: Raleway, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -148,17 +156,27 @@ background-color: #188ce8;
     color: var(--white-textcolor);
 }
 
-/* Преимущества */
+/* Преимущества!!!!!!!!!!! */
+
 .advantages-list {
     display: flex;
-    margin-top: 244px;
-    margin-bottom: 94px;
-    margin-left: 215px;
-    margin-right: 215px;
+    flex-wrap: wrap;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.advantages-list .item:not(:last-child) {
+.advantages-list .item {
+    width: calc((100% - 90px) / 4);
+    margin-top: 244px;
+    margin-bottom: 94px; 
     margin-right: 30px;
+}
+
+.advantages-list .item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .advantages-list h3 {
@@ -188,12 +206,20 @@ background-color: #188ce8;
 
 .service-items {
     display: flex;
-    margin-left: 215px;
-    margin-right: 215px;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.service-items .item.item:not(:last-child) {
+.service-items .item {
+    width: calc((100% - 60px) / 2);
     margin-right: 30px;
+}
+
+.service-items .item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .service-title {
@@ -234,13 +260,22 @@ background-color: #188ce8;
 
 .team-list {
     display: flex;
-    margin-left: 215px;
-    margin-right: 215px;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
     text-align: center;
 }
 
-.team-list .item:not(:last-child) {
+.team-list .item {
+    width: calc((100% - 90px) / 4);
     margin-right: 30px;
+}
+
+.team-list .item:nth-child(4n) {
+    margin-right: 0px;
 }
 
 .team {
